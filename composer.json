@@ -10,7 +10,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "ext-gd": "*",
+         "ext-gd": "*",
+         "ext-zip": "*",
         "barryvdh/laravel-dompdf": "^3.1",
         "intervention/image": "^3.11",
         "laravel/fortify": "^1.30",
