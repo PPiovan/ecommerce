@@ -26,9 +26,7 @@ use App\Http\Controllers\Cliente\MercadoPagoController;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
-    return 'ok';
-})->name('home');
+Route::get('/', [TiendaController::class, 'home'])->name('home');
 
 Route::get('/productos', [TiendaController::class, 'productos'])->name('productos.index');
 Route::get('/productos/{producto}', [TiendaController::class, 'showProducto'])->name('productos.show');
